@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import SideBar from "./components/SideBar";
+import Transaction from "./components/Transaction";
+import Settlement from "./components/Settlement";
+import User from "./components/User";
+import Loans from "./components/Loans";
+import Dispute from "./components/Dispute";
+import Accounts from "./components/Account";
+import Terminal from "./components/Terminal";
+import Dashboard from "./components/Dashboard";
+import "./App.css";
+import LogOut from "./LogOut";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <SideBar>
+          <Routes>
+            <Route exact path="/" element={<Dashboard />} />
+            <Route path="/transaction" element={<Transaction />} />
+            <Route path="/settlement" element={<Settlement />} />
+            <Route path="/user" element={<User />} />
+            <Route path="/loans" element={<Loans />} />
+            <Route path="/dispute" element={<Dispute />} />
+            <Route path="/accounts" element={<Accounts />} />
+            <Route path="/terminal" element={<Terminal />} />
+            <Route path="/logout" element={<LogOut />} />
+          </Routes>
+        </SideBar>
+      </BrowserRouter>
+    </>
   );
 }
 

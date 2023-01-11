@@ -1,6 +1,6 @@
 import SideBar from "./SideBar";
 import { useState } from "react";
-import UserModal from "../UserModal";
+import UserModal from "./UserModal";
 import UserForm from "./UserForm";
 import UserForm2 from "./UserForm2";
 import "../App.css";

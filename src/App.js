@@ -9,7 +9,7 @@ import Accounts from "./components/Account";
 import Terminal from "./components/Terminal";
 import Dashboard from "./components/Dashboard";
 import "./App.css";
-import LogOut from "./LogOut";
+import LogOut from "./components/LogOut";
 
 function App() {
   return (

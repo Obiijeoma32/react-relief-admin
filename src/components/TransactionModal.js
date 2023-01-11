@@ -14,7 +14,9 @@ export default function TransactionModal({ closeModal }) {
                   <h4>
                     <span className="list-tag"> Amount: </span>
                     <br />
-                    <h3 className="list-id">₦50,000.00</h3>
+                    <h3 style={{ fontSize: "20px" }} className="list-id">
+                      ₦50,000.00
+                    </h3>
                   </h4>
                   <h4>
                     <span className="list-tag">Terminal Name:</span>
@@ -45,7 +47,9 @@ export default function TransactionModal({ closeModal }) {
                   <h4>
                     <span className="list-tag">Date: </span>
                     <br />
-                    <h3 className="list-id">2022-06-26 18:58:39</h3>
+                    <h3 style={{ fontSize: "20px" }} className="list-id">
+                      2022-06-26 18:58:39
+                    </h3>
                   </h4>
                   <h4>
                     <span className="list-tag">Customer Name:</span>

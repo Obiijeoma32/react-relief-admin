@@ -1,0 +1,953 @@
+@import url("https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 10px;
+}
+
+.type-container {
+  font-family: "Gilroy";
+  width: 600px;
+  height: 550px;
+  margin-left: 22.5rem;
+  margin-top: 35px;
+  background: #ffffff;
+  box-shadow: 0px 5px 200px 3px rgba(64, 68, 82, 0.1);
+  border-radius: 10px;
+}
+.type-container h1 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1e354f;
+  text-align: center;
+  padding-top: 4rem;
+}
+.type-container .p {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 14px;
+  color: #707885;
+  text-align: center;
+}
+.type-list-container {
+  font-family: "Gilroy";
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+.type-list {
+  width: 471px;
+  height: 100px;
+  border: 1px solid #ccd2d5;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 25px;
+}
+.type-icon {
+  margin: 25px;
+}
+.type-detail label {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  color: #192850;
+  margin-top: 18px;
+  font-family: "Gilroy";
+}
+.type-detail p {
+  font-family: "Gilroy";
+  margin-top: 10px;
+  width: 300px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #404452;
+}
+.type-active {
+  border: 1px solid #0097dc;
+  color: #0097dc;
+}
+.type-link {
+  font-family: "Gilroy";
+  width: 426px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 5.5rem;
+  background: #0097dc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.type-detail input {
+  width: 18px;
+  height: 18px;
+}
+.type-button {
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+.approved-container {
+  display: flex;
+  font-family: "Gilroy";
+}
+.approved-details {
+  margin-top: 5rem;
+  margin-left: 4.5rem;
+}
+.approved-details img {
+  width: 237px;
+  height: 237px;
+  margin-left: 7.6rem;
+  margin-bottom: 2rem;
+}
+.approved-details h1 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: #162930;
+  margin-bottom: 23px;
+}
+.approved-details p {
+  font-family: "Gilroy";
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #68717f;
+  width: 250px;
+  margin-left: 7rem;
+}
+.approved-link {
+  font-family: "Gilroy";
+  width: 426px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 2.8rem;
+  margin-top: 3rem;
+  background: #0097dc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.newuser-sidebar {
+  width: 221px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: #ffff;
+  border: 0.5px solid #c4ccd2;
+  position: fixed;
+}
+.newuser-details {
+  text-align: left;
+  margin: 35px;
+}
+.newuser-menu {
+  text-decoration: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  color: #68717f;
+  margin-bottom: 25px;
+  align-items: center;
+}
+.profile-bar h2 {
+  font-style: normal;
+  color: #162930;
+}
+
+.newuser-menu-active {
+  color: #0098db;
+  text-decoration: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  /* margin-top: 5px; */
+  margin-bottom: 22px;
+}
+.newuser-icon {
+  margin-right: 40px;
+}
+.newuser-link {
+  text-decoration: none;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  color: #68717f;
+  padding-top: 9rem;
+  margin-left: 2.2rem;
+  text-align: left;
+  align-items: center;
+}
+
+.homeuser-container,
+.dashboarduser-container,
+.transferhome-container,
+.confirmmodal-container,
+.billsuser-container,
+.loanuser-container {
+  margin-left: 17rem;
+  /* font-family: "Euclid Circular B"; */
+  margin-top: 5px;
+}
+.homeuser-container .h1 {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #162930;
+  /* font-family: "Euclid Circular B"; */
+}
+.homeuser-container .p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #68717f;
+  margin-top: 5px;
+}
+.transferuser-container {
+  width: 933px;
+  height: 200px;
+  background: #46afe0;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.home-transfer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.home-transfer .span1 {
+  margin: 30px;
+}
+.span1 h1 {
+  font-weight: 600;
+  font-size: 38px;
+}
+.span1 p {
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.home-transfer .span2 {
+  margin-right: 40px;
+  display: flex;
+  width: 120px;
+  justify-content: space-between;
+}
+.span2 h3 {
+  width: 70px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.home-box-container {
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+}
+.span3 {
+  width: 105.5px;
+  height: 39.52px;
+  background: #f5f5f6;
+  border: 1.09375px solid rgba(255, 255, 255, 0.06);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0098db;
+  margin-right: 19px;
+}
+.span4 {
+  background: #f5f5f6;
+  border: 1.09375px solid rgba(255, 255, 255, 0.06);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0098db;
+  width: 193px;
+  height: 40px;
+}
+.homeuser-icon {
+  margin-top: 20px;
+  width: 633px;
+  display: flex;
+  justify-content: space-between;
+}
+.homeuser-icon h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #2f2e2e;
+}
+.homeuser-icon div {
+  text-align: center;
+  margin-top: 7rem;
+}
+.dashboardtransaction-container,
+.dashboard-transaction-container {
+  display: flex;
+  width: 930px;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.dashboardrecent-transaction h2 {
+  font-family: "Euclid Circular B";
+  font-weight: 600;
+  font-size: 16px;
+  color: #2f2e2e;
+  margin-bottom: 20px;
+}
+.dashboardrecent-link {
+  font-family: "Euclid Circular B";
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  outline: none;
+  color: #94a2ab;
+}
+
+.dashboardrecent-today {
+  display: flex;
+  margin-top: 7px;
+  margin-bottom: 23px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid rgba(31, 36, 49, 0.05);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgba(31, 36, 49, 0.05);
+  width: 597px;
+  height: 74px;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+.dashboardrecentcontainer {
+  margin-top: 45px;
+  font-family: "Euclid Circular B";
+}
+.dashboardrecentcontainer h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #94a2ab;
+}
+.dashboardrecent-today span h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #2a3459;
+  margin-right: 70px;
+}
+.dashboardrecentcontainer span {
+  margin-right: 2rem;
+}
+.dashboardrecentcontainer span p {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.dashboardrecent-today .p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #2a3459;
+  margin-top: 10px;
+}
+.alltransaction-container,
+.alldispute-container {
+  margin-left: 17rem;
+}
+.alltransactionmodal-container,
+.alldisputemodal-container {
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+.alltransaction-content,
+.alldispute-content {
+  position: fixed;
+  margin: 0 auto;
+  top: 20px;
+  z-index: 222;
+  left: 33%;
+}
+.alltransaction-details,
+.alldispute-details {
+  margin-top: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 495px;
+  height: 495px;
+}
+.alltransaction-details .div {
+  display: flex;
+  font-family: "Euclid Circular B";
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.div h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #282828;
+  font-family: "Euclid Circular B";
+}
+.div h3 {
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(47, 46, 46, 0.8);
+  font-family: "Euclid Circular B";
+}
+.div h1 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #2f2e2e;
+  font-family: "Euclid Circular B";
+}
+.transactiondispute-box {
+  text-align: center;
+}
+.transactiondispute-box svg {
+  margin-top: 8rem;
+  margin-bottom: 20px;
+}
+.transactiondispute-box p {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 250px;
+  color: #2f2e2e;
+  margin-left: 7.9rem;
+}
+.transactiondispute-box div {
+  cursor: pointer;
+  width: 340px;
+  height: 42px;
+  color: #ffffff;
+  padding-top: 15px;
+  background: #0097dc;
+  border-radius: 5px;
+  margin-left: 5rem;
+  margin-top: 30px;
+}
+.transferhome-container {
+  display: flex;
+  width: 1000px;
+}
+.transferhome-container h1 {
+  font-family: "Euclid Circular B";
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 20px;
+  color: #162930;
+}
+.transferhome-details {
+  width: 600px;
+  height: 500px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-left: 3rem;
+  margin-top: 6rem;
+  text-align: center;
+}
+
+.transferhome-details h2 {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.transferhome-details p {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(47, 46, 46, 0.3);
+}
+.transferhome-details .div {
+  font-family: "Euclid Circular B";
+  width: 339px;
+  height: 45px;
+  background: #f6fbfe;
+  border: 1px solid #e3ecf2;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 8rem;
+  padding: 2px;
+  margin-bottom: 20px;
+  color: rgba(47, 46, 46, 0.3);
+}
+.transferhome-details .div input {
+  font-family: "Euclid Circular B";
+  width: 280px;
+  height: 40px;
+  outline: none;
+  background: #f6fbfe;
+  border: none;
+}
+.div input::placeholder {
+  color: rgba(47, 46, 46, 0.3);
+}
+
+.transferhome-details .div2 {
+  font-family: "Euclid Circular B";
+  width: 333px;
+  height: 45px;
+  background: #f6fbfe;
+  border: 1px solid #e3ecf2;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  color: rgba(47, 46, 46, 0.3);
+}
+.div2::placeholder {
+  font-family: "Euclid Circular B";
+  color: rgba(47, 46, 46, 0.3);
+}
+.transferhome-details h3 {
+  width: 345px;
+  height: 40px;
+  background: #0097dc;
+  border-radius: 5px;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 8rem;
+}
+.transferhome-link {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.div-container {
+  margin-top: 50px;
+}
+.confirmhome-details {
+  width: 600px;
+  height: 600px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-top: 6rem;
+  text-align: center;
+}
+.confirmhome-details svg {
+  margin-top: 30px;
+}
+.confirmhome-details h2 {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Euclid Circular B";
+  color: #2f2e2e;
+  margin-top: 15px;
+}
+.confirmhome-details .p {
+  color: rgba(47, 46, 46, 0.7);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Euclid Circular B";
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.confirmhome-details .p2 {
+  color: rgba(47, 46, 46, 0.7);
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Euclid Circular B";
+  margin-top: 5px;
+}
+.confirmhome-details h3 {
+  font-family: "Euclid Circular B";
+  font-weight: 500;
+  font-size: 22px;
+  color: #2f2e2e;
+}
+.confirmhome-box {
+  width: 334px;
+  height: 156px;
+  background: #f5fcff;
+  border: 1px dashed #0097dc;
+  border-radius: 4px;
+  margin-left: 8rem;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.confirmhome-box div {
+  display: flex;
+  justify-content: space-between;
+}
+.confirmhome-box h4 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(47, 46, 46, 0.7);
+}
+.confirmhome-box h5 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2f2e2e;
+}
+.confirmcheckbox {
+  width: 415px;
+  margin-top: 25px;
+}
+.confirmcheckbox input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #0097dc;
+  border-radius: 3px;
+}
+.confirmcheckbox label {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 7px;
+  padding-bottom: 3px;
+  color: #0097dc;
+}
+.confirmlink,
+.confirmmodal-link {
+  width: 345px;
+  height: 40px;
+  background: #0097dc;
+  border-radius: 5px;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-left: 8rem;
+}
+.confirmlink .link,
+.confirmmodal-link .link,
+.confirmmodal2-link .link,
+.confirmmodallink {
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.confirmmodal-details {
+  width: 659px;
+  height: 350px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  margin-left: 7rem;
+  margin-top: 4rem;
+  padding: 20px;
+}
+
+.confirmmodal-form input {
+  width: 69.23px;
+  height: 70px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #d1d8dd;
+  border-radius: 4px;
+}
+.confirmmodal2-link {
+  width: 345px;
+  height: 40px;
+  background: #0097dc;
+  border-radius: 5px;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-left: 11rem;
+}
+.billsuser-icon {
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  /* padding-left: 10px; */
+  border-radius: 50%;
+  background: #e6f7ff;
+}
+.bills-icon-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+.billsuser-link {
+  text-decoration: none;
+  color: #2f2e2e;
+}
+.disputemodal-container {
+  padding-top: 30px;
+}
+.disputemodal-box,
+.disputeuser-form input {
+  outline: none;
+  width: 333px;
+  height: 47px;
+  background: #f6fbfe;
+  border: 1px solid #e3ecf2;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  color: rgba(47, 46, 46, 0.3);
+}
+.disputeuser-form input::placeholder,
+.disputemodal-box input::placeholder {
+  color: rgba(47, 46, 46, 0.3);
+  font-family: "Euclid Circular B";
+}
+.disputemodal-box input {
+  width: 300px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #f6fbfe;
+  color: rgba(47, 46, 46, 0.3);
+}
+.disputeuser-form {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+.dispute-button {
+  cursor: pointer;
+  width: 340px;
+  height: 40px;
+  background: #0097dc;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10px;
+  margin-left: 5rem;
+  margin-top: 20px;
+}
+.disputeuser-input [type="date"]::before {
+  color: rgba(47, 46, 46, 0.3);
+  content: attr(placeholder) !important;
+  font-family: "Euclid Circular B";
+}
+
+.disputeuser-div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.disputeuser-div .h1 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #0097dc;
+  margin-top: 40px;
+}
+.disputeuser-div .h3 {
+  margin-top: 40px;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+  color: #434343;
+}
+.disputeuser-div .segun {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* text-align: left; */
+  color: #434343;
+}
+.disputeuser-div .transfer {
+  font-family: "Euclid Circular B";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 11px;
+  color: #434343;
+}
+.disputeuser-div .merchant {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+}
+.disputeuser-div .lang {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2f2e2e;
+}
+.disputediv-box {
+  margin-top: 30px;
+  margin: 30px;
+}
+.disputediv-box .click h1 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(67, 67, 67, 0.8);
+}
+.disputediv-box .click {
+  text-align: center;
+  cursor: pointer;
+}
+.loanuserhome-details {
+  width: 600px;
+  height: 650px;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-left: 11rem;
+  margin-top: 3rem;
+  text-align: center;
+  /* margin-bottom: 2rem; */
+}
+.loanuser-container h1 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #162930;
+  margin-top: 25px;
+}
+.loanuser-container p {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #68717f;
+}
+.loanuserhome-details p {
+  text-align: center;
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(47, 46, 46, 0.3);
+}
+
+.loanform-container .form,
+.loanform-container input {
+  width: 343px;
+  height: 45px;
+  background: #f6fbfe;
+  border: 1px solid #e3ecf2;
+  border-radius: 5px;
+  margin-bottom: 27px;
+  outline: none;
+  margin-top: 4px;
+}
+.loanform-container input {
+  padding-left: 13px;
+}
+.loanform-container {
+  margin-top: 40px;
+}
+.loanform-container .label {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #817e7e;
+}
+.form input {
+  outline: none;
+  border: none;
+  width: 295px;
+  /* margin-bottom: 10px; */
+}
+.loanuser-privacy {
+  width: 400px;
+  height: 45px;
+  margin-left: 6.5rem;
+}
+
+.loanuser-privacy label {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #16243a;
+}
+.loanuser-privacy a {
+  color: #0097dc;
+  text-decoration: none;
+}
+.loanuser-link {
+  margin-top: 30px;
+  width: 347px;
+  height: 40px;
+  background: #0097dc;
+  border-radius: 5px;
+  margin-left: 8rem;
+  padding-top: 12px;
+}
+@media screen and (min-width: 1650px) {
+  .typeofaccount {
+    width: 100%;
+    height: 100vh;
+    /* margin-right: 10rem; */
+  }
+  .type-container {
+    margin-top: 10%;
+    margin-left: 50%;
+  }
+  .approved-details {
+    margin-top: 20%;
+  }
+}

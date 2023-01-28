@@ -1,4 +1,4 @@
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-b?styles=100047");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
 * {
   padding: 0;
   margin: 0;
@@ -865,6 +865,379 @@ body {
 .next-page-click {
   margin-right: 2rem;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b5b5b5;
+  border-radius: 10px;
+}
+.register-form,
+.kyc-details,
+.otp-details {
+  margin-left: 6rem;
+  margin-top: 6rem;
+}
+.register-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.register-container img {
+  width: 558px;
+  height: 930px;
+  margin-left: 10rem;
+}
+.form1,
+.kyc-form {
+  margin-top: 20px;
+}
+.form1 input,
+.kyc-form input {
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+  width: 465px;
+  height: 50px;
+  color: rgba(47, 46, 46, 0.5);
+  margin-bottom: 12px;
+  outline: none;
+  padding-left: 15px;
+}
+.form1 input::placeholder {
+  color: rgba(47, 46, 46, 0.5);
+}
+.form1 select,
+.kyc-form select {
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+  width: 482px;
+  height: 50px;
+  color: rgba(47, 46, 46, 0.5);
+  margin-bottom: 18px;
+  outline: none;
+  padding: 14px;
+  font-family: "Euclid Circular B";
+}
+
+.register-form h1,
+.kyc-details h1,
+.otp-details h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #16243a;
+  font-family: "Euclid Circular B";
+  text-align: left;
+}
+.register-link {
+  width: 426px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 25px;
+  background: #0097dc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.register-form p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #68717f;
+  text-align: center;
+  margin-top: 12px;
+}
+.register-span {
+  color: #0097dc;
+  text-decoration: none;
+}
+.register-span:hover {
+  text-decoration: underline;
+}
+.kyc-container {
+  display: flex;
+}
+.kyc-details p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #68717f;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+.kyc-img img {
+  width: 558px;
+  height: 850px;
+  margin-left: 10rem;
+}
+.otp-container {
+  display: flex;
+}
+.otp-details h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.otp-details p {
+  font-weight: 300;
+  font-size: 15px;
+  color: rgba(47, 46, 46, 0.7);
+}
+.otp-form {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.otp-form input {
+  border: 1px solid #d1d8dd;
+  border-radius: 4px;
+  width: 90px;
+  height: 90px;
+  outline: none;
+  padding: 10px;
+}
+.otp-img img {
+  width: 558px;
+  height: 645px;
+  margin-left: 11rem;
+}
+.otp-link {
+  width: 506px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  background: #0097dc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 55px;
+  margin-bottom: 10px;
+}
+.otp-details .p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: #0097dc;
+}
+.login-container,
+.reset-container,
+.createpass-container,
+.getstarted-container {
+  display: flex;
+}
+.login-details,
+.reset-details,
+.createpass-details,
+.getstarted-details {
+  margin-left: 6rem;
+  margin-top: 8rem;
+  width: 80%;
+}
+.login-details h1,
+.reset-details h1,
+.createpass-details h1,
+.getstarted-details h1 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #162930;
+  margin-top: 20px;
+}
+.login-form,
+.reset-details form,
+.createpass-details form,
+.getstarted-details form {
+  margin-top: 60px;
+}
+.login-form input,
+.reset-form input {
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+  width: 465px;
+  height: 50px;
+  padding-left: 14px;
+  outline: none;
+  color: #9ba3ae;
+  margin-bottom: 15px;
+}
+.login-form input::placeholder,
+.reset-form input::placeholder,
+.createpass-form input::placeholder,
+.create-inputfield input::placeholder,
+.getstarted-flag-input input::placeholder {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #9ba3ae;
+}
+.login-pass {
+  display: flex;
+  justify-content: space-between;
+  width: 475px;
+}
+.login-pass p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #0097dc;
+}
+.login-link {
+  width: 475px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  /* margin-left: 15px; */
+  background: #0097dc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 35px;
+}
+.login-button {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  outline: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+.createpass-details p {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(47, 46, 46, 0.7);
+  margin-top: 5px;
+}
+.createpass-form .input1,
+.getstarted-form input {
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+  width: 465px;
+  height: 50px;
+  padding-left: 14px;
+  outline: none;
+  color: #9ba3ae;
+  margin-bottom: 15px;
+}
+.create-inputfield {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+  width: 445px;
+  height: 20px;
+  padding: 18px;
+  outline: none;
+  color: #9ba3ae;
+  margin-bottom: 15px;
+}
+.create-inputfield input {
+  outline: none;
+  border: none;
+  width: 400px;
+  color: #9ba3ae;
+}
+.createpass-link {
+  width: 480px;
+  height: 64px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  background: #0097dc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 55px;
+  margin-bottom: 10px;
+}
+.getstarted-form .div {
+  display: flex;
+  justify-content: space-between;
+  width: 480px;
+}
+.div input {
+  width: 214px;
+  height: 50px;
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+}
+.getstarted-flag-input {
+  display: flex;
+  width: 480px;
+  height: 50px;
+  border: 1px solid #ecf0f3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.getstarted-flag-input input {
+  font-family: "Euclid Circular B";
+  font-weight: 400;
+  font-size: 14px;
+  width: 420px;
+  border: none;
+  height: 45px;
+  margin-top: 14px;
+  padding-left: 7px;
+  margin-left: 16px;
+  color: #9ba3ae;
+  border-left: 1px solid #ecf0f3;
+}
+.getstarted-flag-input img {
+  margin-left: 15px;
+}
+.getstarted-img img {
+  width: 558px;
+  height: 845px;
+  margin-left: 11rem;
+}
+.getstarted-condition {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  align-items: center;
+}
+.getstarted-condition input {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #16243a;
+  border-radius: 2px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+.getstarted-condition a {
+  color: #0097dc;
+  outline: none;
+  text-decoration: none;
+}
 @media screen and (min-width: 1440px) {
   .transaction-table-options,
   .transaction-table-output,
@@ -880,6 +1253,15 @@ body {
   }
   .user-table-options {
     width: 71.5rem;
+  }
+  .register-image img,
+  .kyc-img img,
+  .otp-img img {
+    width: 712px;
+    height: 1024px;
+  }
+  .otp-details {
+    margin-top: 9rem;
   }
   .dispute-table-options {
     width: 71.5rem;
@@ -918,6 +1300,27 @@ body {
   .transaction-table-output,
   .transaction-footer {
     width: 101.5rem;
+  }
+  .login-details {
+    margin-top: 20%;
+  }
+  .register-image,
+  .kyc-img,
+  .otp-img {
+    width: 50%;
+    height: 100%;
+  }
+  .register-image img,
+  .kyc-img img,
+  .otp-img img {
+    width: 1000px;
+    height: 1170px;
+  }
+  .register-form,
+  .kyc-details,
+  .otp-details {
+    margin-left: 20%;
+    margin-top: 10%;
   }
   .main-dashboard-icon-text {
     margin-left: 22rem;

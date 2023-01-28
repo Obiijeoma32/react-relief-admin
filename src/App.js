@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import SideBar from "./components/SideBar";
+
 import Transaction from "./components/Transaction";
 import Settlement from "./components/Settlement";
 import User from "./components/User";
@@ -44,7 +44,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <SideBar> */}
         <Routes>
           <Route exact path="/reliefadmin" element={<Dashboard />} />
           <Route path="/transaction" element={<Transaction />} />
@@ -56,7 +55,7 @@ function App() {
           <Route path="/terminal" element={<Terminal />} />
           <Route path="/logout" element={<LogOut />} />
         </Routes>
-        {/* </SideBar> */}
+
         <Routes>
           <Route exact path="/" element={<TypeAccount />} />
           <Route path="/register" element={<Register />} />

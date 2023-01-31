@@ -1,12 +1,11 @@
-@import url("https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-b");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 body {
   background-color: #ffffff;
+  font-family: "Euclid Circular B";
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -24,7 +23,7 @@ body {
 }
 
 .type-container {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   width: 600px;
   height: 550px;
   margin-left: 22.5rem;
@@ -34,7 +33,7 @@ body {
   border-radius: 10px;
 }
 .type-container h1 {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -43,14 +42,14 @@ body {
   padding-top: 4rem;
 }
 .type-container .p {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   font-weight: 400;
   font-size: 14px;
   color: #707885;
   text-align: center;
 }
 .type-list-container {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   margin-left: 4rem;
   margin-top: 3rem;
 }
@@ -74,10 +73,10 @@ body {
   justify-content: space-between;
   color: #192850;
   margin-top: 18px;
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
 }
 .type-detail p {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   margin-top: 10px;
   width: 300px;
   font-weight: 400;
@@ -89,7 +88,7 @@ body {
   color: #0097dc;
 }
 .type-link {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   width: 426px;
   height: 64px;
   font-weight: 600;
@@ -115,7 +114,7 @@ body {
 }
 .approved-container {
   display: flex;
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
 }
 .approved-details {
   margin-top: 5rem;
@@ -128,7 +127,7 @@ body {
   margin-bottom: 2rem;
 }
 .approved-details h1 {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   font-weight: 700;
   font-size: 20px;
   text-align: center;
@@ -136,7 +135,7 @@ body {
   margin-bottom: 23px;
 }
 .approved-details p {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   font-weight: 400;
   font-size: 16px;
   text-align: center;
@@ -145,7 +144,7 @@ body {
   margin-left: 7rem;
 }
 .approved-link {
-  font-family: "Gilroy";
+  font-family: "Euclid Circular B";
   width: 426px;
   height: 64px;
   font-weight: 600;
@@ -400,6 +399,7 @@ body {
   margin-left: 17rem;
 }
 .alltransactionmodal-container,
+.all-transaction-modal-container,
 .alldisputemodal-container {
   background: rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -410,6 +410,7 @@ body {
   height: 100vh;
 }
 .alltransaction-content,
+.all-transaction-modal-content,
 .alldispute-content {
   position: fixed;
   margin: 0 auto;
@@ -501,7 +502,7 @@ body {
 }
 
 .transferhome-details h2 {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Euclid Circular B";
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -924,9 +925,11 @@ body {
   font-size: 14px;
   color: #16243a;
 }
-.loanuser-privacy a {
+.loanuser-privacy span,
+.privacy-details a {
   color: #0097dc;
-  text-decoration: none;
+  cursor: pointer;
+  /* text-decoration: none; */
 }
 .loanuser-link {
   margin-top: 30px;
@@ -936,6 +939,65 @@ body {
   border-radius: 5px;
   margin-left: 8rem;
   padding-top: 12px;
+}
+.privacy-details {
+  width: 600px;
+  height: 600px;
+  overflow-x: scroll;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.privacy-details::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+.privacy-details::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+.privacy-details::-webkit-scrollbar-thumb {
+  background: #817e7e;
+  border-radius: 10px;
+}
+.privacy-box {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.privacy-details h1 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #162930;
+  margin-bottom: 15px;
+}
+.privacy-details h3 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #162930;
+}
+.privacy-details h4 {
+  font-family: "Euclid Circular B";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #162930;
+}
+.privacy-details p {
+  font-family: "Euclid Circular B";
+  letter-spacing: 1px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #68717f;
+  margin-bottom: 20px;
 }
 @media screen and (min-width: 1650px) {
   .typeofaccount {

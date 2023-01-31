@@ -1,8 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import NewUser from "./NewUser";
+import PrivacyPolicy from "./PrivacyPolicy";
+import TermsAndCondition from "./TermsAndCondition";
 import "./Web.css";
 
 function LoanUser() {
+  const [policy, setPolicy] = useState(false);
+  const [terms, setTerms] = useState(false);
+
+  function handlePolicyClose() {
+    setPolicy(false);
+  }
+  function handleTermsClose() {
+    setTerms(false);
+  }
   return (
     <>
       <NewUser />
@@ -40,7 +52,7 @@ function LoanUser() {
           <div className="loanuser-privacy">
             <input type="checkbox" />{" "}
             <label htmlFor="checkbox">
-              I have read, understood and I agree to Relief’s <a href="/">Privacy Policy</a> and <a href="/"> Terms and conditions </a>
+              I have read, understood and I agree to Relief’s <span onClick={() => setPolicy(true)}>Privacy Policy</span> and <span onClick={() => setTerms(true)}> Terms and conditions </span>
             </label>
           </div>
           <div className="loanuser-link">
@@ -51,6 +63,8 @@ function LoanUser() {
           </div>
         </div>
       </div>
+      {policy && <PrivacyPolicy handlePolicyClose={handlePolicyClose} />}
+      {terms && <TermsAndCondition handleTermsClose={handleTermsClose} />}
     </>
   );
 }

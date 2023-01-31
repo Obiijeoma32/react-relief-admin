@@ -1,19 +1,22 @@
 import home from "./Homepage.png";
 import "../App.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   function handleContinue(event) {
     event.preventDefault();
     if (email === "user@gmail.com" && password === "user") {
-      window.location.href = "/homeuser";
+      navigate("/homeuser");
     } else if (email === "admin@gmail.com" && password === "admin") {
-      window.location.href = "/reliefadmin";
+      navigate("/reliefadmin");
     }
   }
+  console.log(window.location.href);
   return (
     <>
       <div className="login-container">

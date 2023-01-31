@@ -36,9 +36,9 @@ import ConfirmModal2 from "./webComponents/ConfirmModal2";
 import BilluserModal from "./webComponents/BilluserModal";
 import BillsTransaction from "./webComponents/BillsTransaction";
 import BillsTransactionModal from "./webComponents/BillsTransactionModal";
-import "./App.css";
 import LoanOtpPage from "./webComponents/LoanOtpPage";
 import LoanConfirmPage from "./webComponents/LoanConfirmPage";
+import "./App.css";
 
 function App() {
   return (

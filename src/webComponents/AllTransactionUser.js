@@ -10,7 +10,7 @@ function AllTransactionUser() {
   const [modal, setModal] = useState(false);
   const [transaction, setTransaction] = useState(false);
   const [next, setNext] = useState(false);
-  function closeModal() {
+  function closeModalTransaction() {
     setModal(false);
   }
   function openTransaction() {
@@ -166,7 +166,7 @@ function AllTransactionUser() {
           </div>
         </div>
       </div>
-      {modal && <AllTransactionModal closeModal={closeModal} openTransaction={openTransaction} />}
+      {modal && <AllTransactionModal closeModalTransaction={closeModalTransaction} openTransaction={openTransaction} />}
       {transaction && <TransactionDispute closeTransaction={closeTransaction} openNextModal={openNextModal} />}
       {next && <NextDispute closeNext={closeNext} />}
     </>

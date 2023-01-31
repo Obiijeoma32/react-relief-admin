@@ -1,10 +1,10 @@
 import "./Web.css";
 
-function AllTransactionModal({ closeModal, openTransaction }) {
+function AllTransactionModal({ closeModalTransaction, openTransaction }) {
   return (
     <>
-      <div className="alltransactionmodal-container" onClick={closeModal}>
-        <div className="alltransaction-content">
+      <div className="all-transaction-modal-container" onClick={closeModalTransaction}>
+        <div className="all-transaction-modal-content">
           <div className="alltransaction-details">
             <div className="div">
               <h2 style={{ marginTop: "30px" }}>Transaction Details</h2>

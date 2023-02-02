@@ -5,7 +5,6 @@ import "./Web.css";
 function TypeAccount() {
   const [individual, setIndividual] = useState(false);
   const [business, setBusiness] = useState(false);
-  // const [input, setInput] = useState(false);
 
   return (
     <>

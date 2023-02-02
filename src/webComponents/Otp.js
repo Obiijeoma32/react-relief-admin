@@ -17,7 +17,7 @@ function Otp() {
           </div>
           <p className="p">Resend OTP</p>
           <div className="otp-link">
-            <Link className="type-button" to="/approved">
+            <Link className="type-button" to="/getstarted">
               Continue
             </Link>
           </div>

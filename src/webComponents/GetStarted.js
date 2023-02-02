@@ -1,9 +1,21 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import home from "./Homepage.png";
 import ng from "./ng.png";
 import "../App.css";
+import PrivacyPolicy from "./PrivacyPolicy";
+import TermsAndCondition from "./TermsAndCondition";
 
 function GetStarted() {
+  const [policy, setPolicy] = useState(false);
+  const [terms, setTerms] = useState(false);
+
+  function handlePolicyClose() {
+    setPolicy(false);
+  }
+  function handleTermsClose() {
+    setTerms(false);
+  }
   return (
     <>
       <div className="getstarted-container">
@@ -31,7 +43,7 @@ function GetStarted() {
           <div className="getstarted-condition">
             <input type="checkbox" />{" "}
             <label htmlFor="checkbox">
-              I have read, understood and I agree to Relief’s <a href="/">Privacy Policy</a> and <a href="/"> Terms and conditions </a>
+              I have read, understood and I agree to Relief’s <span onClick={() => setPolicy(true)}>Privacy Policy</span> and <span onClick={() => setTerms(true)}> Terms and conditions </span>
             </label>
           </div>
           <div className="approved-link">
@@ -52,6 +64,8 @@ function GetStarted() {
           <img src={home} alt="homepage" />
         </div>
       </div>
+      {policy && <PrivacyPolicy handlePolicyClose={handlePolicyClose} />}
+      {terms && <TermsAndCondition handleTermsClose={handleTermsClose} />}
     </>
   );
 }

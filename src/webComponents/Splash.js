@@ -3,9 +3,9 @@ import "../App.css";
 function Splash() {
   return (
     <>
-      <div>
-        <svg width="70" height="100" viewBox="0 0 70 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_1575_10112)">
+      <div style={{ width: "1200px", height: "100vh" }}>
+        <svg style={{ marginLeft: "50%", marginTop: "20%" }} width="70" height="100" viewBox="0 0 70 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clipPath="url(#clip0_1575_10112)">
             <path
               fillRule="evenodd"
               clipRule="evenodd"

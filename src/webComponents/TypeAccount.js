@@ -9,7 +9,7 @@ function TypeAccount() {
   return (
     <>
       <div className="typeofaccount">
-        <div className="type-container">
+        <div style={{ fontFamily: "Euclid Circular B" }} className="type-container">
           <h1>Select account type</h1>
           <p className="p">Select the type of account you are trying to create</p>
           <form>
